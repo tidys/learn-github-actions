@@ -9,6 +9,8 @@ jobs: # 任务
       # 此操作会重新拉取仓库
       - name: Checkout
         uses: actions/checkout@v2
+      - name: install
+        run: npm install  
       - name: Hello world action step
         id: hello123
         # uses: actions/hello-world-javascript-action@v1
